@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ShoutYes.Pages.CampaignPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="List of recipient" HorizontalOptions="Center"/>
+            <ListView  x:Name="toList" HorizontalOptions="Center"/>
+            <Button Text="Add Receipant" 
+                    Clicked="To_Add_Clicked" 
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="StartAndExpand"/>
+            <Entry x:Name="emailEntry"
+                Placeholder="Email"
+                   />
+            <Entry x:Name="fnameEntry"
+                Placeholder="First Name"
+                    />
+            <Entry x:Name="lnameEntry"
+                Placeholder="Last Name"
+                    />
+            <Button Text="Send Email" 
+                    Clicked="Send_Email_Clicked" 
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
